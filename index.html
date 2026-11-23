@@ -19,6 +19,21 @@
             color: #1e293b;
         }
 
+        /* صورة أعلى يسار الواجهة */
+        .top-left-avatar {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 1002;
+            border: 2px solid #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+            background: #ffffff;
+        }
+
         /* زرار القائمة للموبايل */
         .menu-toggle {
             display: none;
@@ -146,6 +161,13 @@
                 display: block;
             }
 
+            .top-left-avatar {
+                width: 42px;
+                height: 42px;
+                top: 15px;
+                left: 15px;
+            }
+
             .sidebar {
                 transform: translateX(100%);
                 padding-top: 70px;
@@ -163,6 +185,8 @@
     </style>
 </head>
 <body>
+
+    <img src="_MG_2288.JPG" alt="صورة عبد الله حمدي" class="top-left-avatar">
 
     <button class="menu-toggle" onclick="toggleSidebar()">
         <i class="fas fa-bars"></i>
@@ -223,12 +247,9 @@
                 html: `
                     <p>يمكنك التواصل معي مباشرة عبر الروابط التالية:</p>
                     <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
-             <a href="https://wa.me/qr/PDVJIYYHO73EJ1" target="_blank" style="background:#16a34a; color:#fff; padding:8px 18px; border-radius:8px; text-decoration:none; font-size:14px;">واتساب</a>
-
-              <a href="https://www.facebook.com/share/1ABSRVytrR/" target="_blank" style="background:#2563eb; color:#fff; padding:8px 18px; border-radius:8px; text-decoration:none; font-size:14px;">فيسبوك</a>
-              <a href="https://t.me/+201025414860" target="_blank" style="background:#0088cc; color:#fff; padding:8px 18px; border-radius:8px; text-decoration:none; font-size:14px;">تيليجرام</a>
-
-
+                        <a href="https://wa.me/qr/PDVJIYYHO73EJ1" target="_blank" style="background:#16a34a; color:#fff; padding:8px 18px; border-radius:8px; text-decoration:none; font-size:14px;">واتساب</a>
+                        <a href="https://www.facebook.com/share/1ABSRVytrR/" target="_blank" style="background:#2563eb; color:#fff; padding:8px 18px; border-radius:8px; text-decoration:none; font-size:14px;">فيسبوك</a>
+                        <a href="https://t.me/+201025414860" target="_blank" style="background:#0088cc; color:#fff; padding:8px 18px; border-radius:8px; text-decoration:none; font-size:14px;">تيليجرام</a>
                     </div>
                 `
             }
